@@ -1,0 +1,492 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+* {
+  scroll-behavior: smooth;
+}
+body {
+  color: #757575;
+  background: #ffffff;
+  font-family: "open sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #454545;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #050505;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #ff4800;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn.custom-btn {
+  padding: 12px 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #ff4800;
+  border: 2px solid #ff4800;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.btn.custom-btn:hover {
+  color: #ff4800;
+  background: transparent;
+}
+
+.btn.custom-btn:focus,
+.form-control:focus,
+.custom-select:focus {
+  box-shadow: none;
+}
+
+.container-fluid {
+  max-width: 1366px;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-size: inherit;
+  margin-left: 0;
+}
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.bg-light {
+  background: transparent !important;
+}
+
+.bg-light.scrolled {
+  background: #ffffff !important;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+.navbar .navbar-brand {
+  margin: 0;
+  color: #ff4800;
+  font-size: 45px;
+  line-height: 0px;
+  font-weight: 700;
+  font-family: "Minion Web", "Comic Sans MS", "Nunito", sans-serif;
+}
+
+.navbar .navbar-brand span {
+  color: #050505;
+  transition: 0.5s;
+}
+
+.navbar .navbar-brand:hover {
+  color: #050505;
+}
+
+.navbar .navbar-brand:hover span {
+  color: #ff4800;
+}
+
+.navbar .nav-link {
+  transition: 0.5s;
+  color: #fff !important;
+  font-size: 18px;
+}
+
+.navbar.scrolled .nav-link {
+  color: #413f3f !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ff4800 !important;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    width: 100%;
+    z-index: 9;
+    transition: 0.5s;
+  }
+
+  .bg-light {
+    background: transparent !important;
+  }
+
+  .bg-light.scrolled {
+    background: #fff !important;
+  }
+
+  .navbar .navbar-brand {
+    color: #ff4800;
+  }
+
+  .navbar .navbar-nav {
+    margin-top: 60px;
+    background-color: #fff !important;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .navbar .navbar-nav::after {
+    content: "";
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid #ff4800;
+    border-bottom: 25px solid #ff4800;
+    right: 5px;
+    top: -50px;
+  }
+
+  .navbar .nav-item .nav-link {
+    text-align: center !important;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .navbar .nav-item .nav-link:hover {
+    color: #fbaf32;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 2rem;
+  }
+}
+
+/***********************************/
+/********** Carousel CSS ***********/
+/***********************************/
+
+.carousel .carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.carousel .carousel-item::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.carousel .carousel-item .carousel-caption {
+  right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  left: 50% !important;
+  bottom: 50% !important;
+  transform: translate(-50%, 50%);
+  width: 75vw !important;
+}
+
+.carousel .carousel-item .carousel-caption h1 {
+  color: #ff4800;
+}
+
+.carousel .carousel-item .carousel-caption h1 span {
+  color: #050505;
+}
+
+.carousel .carousel-item .carousel-caption p {
+  margin: 20px 0;
+  font-size: 25px;
+}
+
+.carousel .carousel-item .carousel-btn {
+  margin: 50px 0;
+}
+
+.carousel .carousel-item .carousel-btn .custom-btn {
+  background: #ff4800;
+  border-color: #ff4800;
+  transition: 0.5s;
+}
+
+.carousel .carousel-item .carousel-btn .custom-btn:hover {
+  color: #ff4800;
+  background-color: transparent;
+}
+
+@media (max-width: 991px) {
+  .carousel .carousel-item img {
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel .carousel-item img {
+    height: 50vh;
+  }
+
+  .carousel .carousel-item .carousel-caption {
+    width: 95vw !important;
+  }
+
+  .carousel .carousel-item .carousel-btn {
+    margin: 20px 0;
+  }
+}
+
+/*********MENU PAGE*************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+  position: relative;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.page-header img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.page-header h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #050505;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .page-header h2 {
+    font-size: 35px;
+  }
+}
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.section-header p {
+  color: #ff4800;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 20px;
+}
+
+.section-header h2 {
+  margin: 0;
+  position: relative;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .section-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-header h2 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-header h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+/****************************************/
+/********* About (Features) CSS *********/
+/****************************************/
+.feature {
+  position: relative;
+  width: 100%;
+  padding: 45px 0 0 0;
+  margin-top: 30px;
+}
+
+.feature .section-header {
+  margin-bottom: 50px;
+}
+
+.feature .feature-text {
+  position: relative;
+  width: 100%;
+}
+
+.feature .feature-img {
+  border-radius: 15px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.feature .feature-img .col-6 {
+  padding: 0;
+  overflow: hidden;
+}
+
+.feature .feature-img img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.feature .feature-img img:hover {
+  transform: scale(1.1);
+}
+
+.feature .feature-item {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.feature .feature-item p {
+  margin-top: 20px;
+}
+
+.feature .feature-item p .name {
+  color: #ff4800;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.feature .feature-item h3 {
+  font-size: 27px;
+  font-weight: 800;
+  color: #ff4800;
+}
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+  position: relative;
+  margin-top: 10px;
+  padding-top: 30px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.contact-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbaf32;
+  border-radius: 50px;
+}
+
+.contact-icon i {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-text {
+  position: relative;
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.contact-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff4800;
+}
+
+.contact-text a p {
+  text-decoration: none;
+  margin: 0;
+  font-size: 16px;
+  color: #454545;
+}
+
+.contact-text a p:hover {
+  color: #050505;
+}
+
+.footer .footer-social {
+  position: relative;
+  display: flex;
+}
+
+.footer .footer-social a {
+  margin-right: 20px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 35px;
+  font-size: 16px;
+  color: #ff4800;
+}
+
+.footer .footer-social a:hover {
+  background: #ff4800;
+  color: #ffffff;
+}
+
+.footer .copyright {
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .copyright p {
+  margin: 0;
+  display: inline-block;
+  color: #454545;
+}
+
+.footer .copyright p a {
+  color: #ff4800;
+}
+
+.footer .copyright p a:hover {
+  color: #050505;
+}
